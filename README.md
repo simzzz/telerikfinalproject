@@ -26,16 +26,7 @@ It could be a simple game, component library, business application or any other
     -   Text editor
 
 ##  General Requirements
-Please define and implement the following assets in your project:
-- Slice the given design in PSD (30 points)
-  - You can find your selected design [here](PSDs.md)
-- Implement responsive design (30 points)
-  - Your web application must look good on any resolution
 - Use a web server (30 points)
-  - Usage of a server (5 points)
-    - Telerik back-end services
-    - Parse.com
-    - Your custom server in Node.js, ASP.NET, SpringMVC, PHP, etc...
   - Server data quality
     - Having a meaningful data
       - Not just an array of integers
@@ -49,30 +40,11 @@ Please define and implement the following assets in your project:
 **The application must work in the latest versions of the browsers: Google Chrome, Mozilla Firefox, Internet Explorer 10/11, Opera and Apple Safari**
 
 ##  Additional Requirements
-Follow the best practices for producing high-quality code:
-- **Correct naming**
-- **Data encapsulation**
-  - Use OOP and modules
-- **Strong cohesion** and **loose coupling**
-- Use **GIT** as a source control system
-  - Host it on [http://github.com](http://github.com)
 - Writing **Efficient** CSS
 - Using **good practices for CSS**
   - Efficiency, naming, etc..
-- **Preprocessors** are optional
 - **Using postprocessors is required**
   - JSHint, CSSLint, etc...
-
-- **You are NOT allowed to use any full-featured js framework/library**
-  - AngularJS
-  - Angular
-  - React
-  - etc.
-
-##  Optional Requirements
-If you have a chance, time and a suitable situation, you might add some of the following to your project:
--   Backward compatibility (make the application usable on browsers like IE8, IE7 and IE6)
--   Integration tests
 
 ##  Non-required Work
 -   Completely finished project is not obligatory required. It will not be a big problem if your project is not completely finished or is not working greatly
@@ -83,8 +55,6 @@ If you have a chance, time and a suitable situation, you might add some of the f
 
 -   Register your application at [Telerik Academy Showcase System](http://best.telerikacademy.com)
     -   Provide a link for the github repository of your application
-    -   Host your application on a server, and provide a link
-        -   You can host your application on http://appharbor.com, http://heroku.com or just use the http://rawgit.com
 
 ## Public Project Defense
 
