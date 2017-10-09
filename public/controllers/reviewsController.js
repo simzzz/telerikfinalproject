@@ -36,16 +36,16 @@ const reviewsController = function() {
                 $('#title').text('Reviews');
                 $('#subtitle').text('Critic reviews at your disposal!');
 
-                $('#show-more').click(() => {
-                    $('#post-small').addClass('hidden');
-                    $('#post-extended').removeClass('hidden');
-                    $('#comments').removeClass('hidden');
+                $('.show-more').click(() => {
+                    $('.post-small').addClass('hidden');
+                    $('.post-extended').removeClass('hidden');
+                    $('.comments').removeClass('hidden');
                 })
 
-                $('#show-less').click(() => {
-                    $('#post-small').removeClass('hidden');
-                    $('#post-extended').addClass('hidden');
-                    $('#comments').addClass('hidden');
+                $('.show-less').click(() => {
+                    $('.post-small').removeClass('hidden');
+                    $('.post-extended').addClass('hidden');
+                    $('.comments').addClass('hidden');
                 });
                 $('#2').addClass('hidden');
 

@@ -8,7 +8,7 @@
     {{#this}}
         <div class="row" id="{{id}}">
             <div class="col-xl-10 col-l-12 col-m-12 col-s-12">
-                <div class="row" id="post-small">
+                <div class="row post-small">
                     <div class="col-12">
                         <div class="row post-title">{{title}}</div>
                         <div class="row post-info">Posted by <a href="#">&nbsp;{{author}}&nbsp;</a> on {{date}} | {{commentsAmount}} Comments</div>
@@ -24,12 +24,12 @@
                         </div>
                         <div class="row">
                             <div class="col-2 ml-auto">
-                                <div class="showcase-btn mr-auto" id="show-more">Show More</div>
+                                <div class="showcase-btn mr-auto show-more">Show More</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row hidden" id="post-extended">
+                <div class="row hidden post-extended">
                     <div class="col-12">
                         <div class="row post-content">
                             <div class="post-text">
@@ -39,13 +39,13 @@
                         </div>
                         <div class="row">
                             <div class="col-2 ml-auto">
-                                <div class="showcase-btn mr-auto" id="show-less">Show Less</div>
+                                <div class="showcase-btn mr-auto show-less">Show Less</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <hr class="divider">
-                <div class="row hidden" id="comments">
+                <div class="row hidden comments">
                     <div class="comment-number">
                         {{commentsAmount}} Comments
                     </div>
