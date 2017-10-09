@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="node-modules/systemjs/dist/system.js"></script>
+    <script src="config/system.config.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-storage.js"></script>
+    <script src="config/firebase.config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script src="node-modules/navigo/lib/navigo.min.js"></script>
+    <!--Libraries-->
+    <script src="./node-modules/jquery/dist/jquery.js"></script>
+    <script src="./node-modules/toastr/toastr.js"></script>
+
+    <!--CSS files for some libraries-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./node-modules/toastr/build/toastr.min.css">
+
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
+
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Blue Review</title>
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row header-main" id="big-header">
+            <div class="col-xl-8 col-l-8 col-m-10 col-s-12 ml-auto mr-auto" id="header">
+                <div class="row h-row">
+                    <div class="col-4">
+                        <a href="#"><img src="./img/logo.png" alt="LOGO" id="logo"></a>
+                    </div>
+                    <div class="col-8" id="navigation">
+                        <ul class="nav justify-content-center ml-auto mr-auto" id="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/reviews">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/shows">Shows</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact">Contact</a>
+                            </li>
+                            <li class="nav-item" id="loginBtn">
+                                <a class="nav-link" href="/login">Log In</a>
+                            </li>
+                            <li class="nav-item" id="registerBtn">
+                                <a class="nav-link" href="/register">Register</a>
+                            </li>
+                            <li class="nav-item hidden" id="currentUser">
+                                <a id="currentUserInner" class="nav-link" href="/user"></a>
+                            </li>
+                            <li class="nav-item hidden" id="logoutBtn">
+                                <a class="nav-link" href="/home"><strong>Log out</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown show" id="mini-nav">
+                        <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Menu
+                        </a>
+
+                        <div class="dropdown-menu hidden" id="dropdownMenu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="/home">Home</a>
+                            <a class="dropdown-item" href="/reviews">Reviews</a>
+                            <a class="dropdown-item" href="/shows">Shows</a>
+                            <a class="dropdown-item" href="/contact">Contact</a>
+                            <a class="dropdown-item" href="/login">Log In</a>
+                            <a class="dropdown-item" href="/register">Register</a>
+                            <a id="currentUserInner" class="dropdown-item" href="/user"></a>
+                            <a class="dropdown-item" href="/home"><strong>Log out</strong></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-l-4 col-m-6 col-s-12 index-header">
+                        <div class="page-title" id="title">
+
+                        </div>
+                        <div class="page-subtitle" id="subtitle">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row content" id="content">
+
+        </div>
+        <div class="row footer" id="index-footer">
+            <div class="col-xl-8 col-l-8 col-m-10 col-s-12 ml-auto mr-auto">
+                <div class="row">
+                    <div class="col-xl-4 col-l-4 col-m-6 col-s-12">
+                        <h1 class="showcase-header-bottom" id="footer-title"><img src="./img/logo.png" id="footer-logo" class="showcase-img float-left" alt="">Blue Review</h1>
+                        <p class="showcase-text-bottom"></p>
+                    </div>
+                    <div class="col-4">
+                        <h1 class="showcase-header-bottom">Browse TV Shows</h1>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="#" class="footer-item">Action</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item">Comedy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item">Horror</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item">Romance</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item">Adventure</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item">Drama</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <h1 class="showcase-header-bottom">Most Recent Reviews</h1>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="#" class="footer-item">Item 6</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item">Item 5</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item">Item 4</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item">Item 3</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item">Item 2</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item">Item 1</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-nav">
+            <div class="col-xl-8 col-l-8 col-m-10 col-s-12 ml-auto mr-auto">
+                <div class="row">
+                    <div class="col-8 float-left">
+                        <ul class="nav justify-content-left">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Shows</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Log In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4 float-right">
+                        <div class="float-right author">
+                            Designed by <a href="https://github.com/simzzz"><strong>Simzzz</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./config/popper.min.js"></script>
+    <script>
+        System.import("index");
+        firebase.initializeApp(config);
+    </script>
+</body>
+
+</html>

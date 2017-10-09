@@ -1,0 +1,664 @@
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .sidebar {
+        text-align: center;
+    }
+    .footer,
+    #index-footer {
+        background-size: cover;
+        background-position: center center;
+    }
+    .sidebar {
+        border: none;
+    }
+    .quote-inner {
+        font-size: 15px;
+    }
+    .media {
+        visibility: hidden;
+    }
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (max-width: 767px) {
+    #navigation {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #mini-nav {
+        display: none;
+    }
+    .media-inner {
+        width: 120px;
+        height: 82px;
+        background-color: white;
+        border: 1px solid #b7b7b7;
+        margin-right: 40px;
+        margin-top: 5px;
+    }
+    .quote-inner {
+        font-size: 18px;
+    }
+    .media {
+        visibility: visible;
+        background-image: url('../img/media-bg.png');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: contain;
+        min-width: 100%;
+        margin-top: 60px;
+        padding-bottom: 90px;
+        text-align: center;
+    }
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .media-inner {
+        width: 120px;
+        height: 82px;
+        background-color: white;
+        border: 1px solid #b7b7b7;
+        margin-right: 40px;
+        margin-top: 5px;
+    }
+    .media :last-child {}
+    #first-child {
+        margin-left: 50px;
+    }
+}
+
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .post-text {
+        padding-left: 35px;
+    }
+    .divider {
+        display: none;
+    }
+    .sidebar {
+        border-left: 10px solid;
+        border-image: url('../img/custom-border.png') 30 30 30 30 stretch;
+        border-width: 10px;
+    }
+    #index-footer {
+        background-size: contain;
+    }
+    .quote-inner {
+        font-size: 20px;
+    }
+    .media-inner {
+        width: 120px;
+        height: 82px;
+        background-color: white;
+        border: 1px solid #b7b7b7;
+        margin-right: 40px;
+        margin-top: 3%;
+    }
+    .media :last-child {
+        margin-right: auto;
+    }
+    #first-child {
+        margin-left: auto;
+    }
+}
+
+@media(min-width: 1700px) {
+    .media-inner {
+        width: 120px;
+        height: 82px;
+        background-color: white;
+        border: 1px solid #b7b7b7;
+        margin-right: 40px;
+        margin-top: 3%;
+    }
+    .media :last-child {
+        margin-right: auto;
+    }
+    #first-child {
+        margin-left: auto;
+    }
+    .quote-inner {
+        font-size: 24px;
+    }
+}
+
+@media(min-width: 1460px) {
+    .media-inner {
+        width: 82px;
+        height: 82px;
+        background-color: white;
+        border: 1px solid #b7b7b7;
+        margin-right: 30px;
+        margin-top: 2%;
+    }
+    .media :last-child {
+        margin-right: auto;
+    }
+    #first-child {
+        margin-left: auto;
+    }
+}
+
+#success_message {
+    display: none;
+}
+
+.active-page {
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.auth label {
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-weight: bold;
+}
+
+
+/*--- GENERAL ---*/
+
+body {
+    text-shadow: 1px 1px 0px white;
+}
+
+.page-title {
+    color: white;
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 48px;
+    text-align: left;
+}
+
+.page-subtitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #778292;
+    margin-bottom: 30px;
+}
+
+.index-header {
+    margin-top: 80px;
+}
+
+.header-main {
+    background-image: url('../img/background-index-header.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+#index-footer {
+    background-image: url('../img/background-footer-home.png');
+}
+
+
+/*--- HEADER ---*/
+
+.header {
+    background-image: url('../img/background-top-home.png');
+    background-position: center center;
+    min-height: 560px;
+    max-height: 560px;
+}
+
+.h-row {
+    text-align: center;
+}
+
+#logo {
+    height: 60px;
+    margin-top: 50px;
+    opacity: 0.7;
+}
+
+.logo-link {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#mini-nav {
+    margin-top: 50px;
+    margin-left: 180px;
+    position: relative;
+    right: 0;
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 30px;
+}
+
+#navigation {
+    margin-top: 50px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    border: 1px solid #111b27;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 0px white;
+    padding-top: 5px;
+    box-shadow: inset 0px -18px 1px #d2d2d2;
+    height: 44px;
+}
+
+#navigation a {
+    color: black;
+}
+
+#navigation a.active {
+    color: #9e9d9d;
+}
+
+#navigation a:hover {
+    color: #9e9d9d;
+}
+
+.drawing {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../img/background-bot-header.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 240px;
+}
+
+.my-carousel {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+}
+
+.my-carousel span>img {
+    opacity: 0.3;
+}
+
+
+/*--- CONTENT ---*/
+
+.content {
+    background-image: url('../img/background-content.png');
+    background-size: cover;
+}
+
+.showcase-img {
+    padding-right: 10px;
+}
+
+.showcase-header {
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 24px;
+    margin-top: 50px;
+    color: #758b8d;
+    margin-left: 12px;
+}
+
+.showcase p {
+    margin: 0 auto;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 12px;
+    color: #8c8a8a;
+}
+
+.showcase-img {
+    margin: 0 auto;
+}
+
+.showcase-btn {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#efefef));
+    background-image: -webkit-linear-gradient(top, white, #efefef);
+    background-image: -moz-linear-gradient(top, white, #efefef);
+    background-image: linear-gradient(to bottom, white, #efefef);
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 11px;
+    color: #7e9294;
+    padding: 4px 10px 4px 10px;
+    border: 1px solid white;
+    border-radius: 12px;
+    box-shadow: 0px 1px 1px #cfcece;
+}
+
+.showcase-btn:hover {
+    box-shadow: 0px 1px 0px black;
+    cursor: pointer;
+}
+
+
+/*--- FOOTER ---*/
+
+#footer-logo {
+    width: 200px;
+}
+
+.footer {
+    background-image: url('../img/background-index-footer.png');
+    background-size: cover;
+}
+
+.footer h1,
+.footer p,
+.footer li {
+    text-shadow: 1px 1px 0px black;
+}
+
+.showcase-header-bottom {
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 24px;
+    margin-top: 50px;
+    color: #fff;
+    margin-left: 12px;
+}
+
+.showcase-text-bottom {
+    color: #aebdd1;
+    font-size: 12px;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.footer-item {
+    color: #aebdd1;
+    font-size: 12px;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.footer-item:hover {
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Droid Sans', sans-serif;
+    cursor: pointer;
+}
+
+.footer-list {
+    list-style-image: url('../img/pointer.png')
+}
+
+.footer-nav {
+    background-image: url('../img/footer-nav.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-nav a,
+.author {
+    color: #aebdd1;
+    font-size: 12px;
+    font-family: 'Droid Sans', sans-serif;
+    padding: 15px;
+    text-shadow: 1px 1px 0px black;
+}
+
+.footer-nav a:hover,
+.author strong {
+    color: white;
+    font-style: italic;
+}
+
+
+/*--- HOME PAGE ---*/
+
+.home-button {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#85bac2), to(#387076));
+    background-image: -webkit-linear-gradient(top, #85bac2, #387076);
+    background-image: -moz-linear-gradient(top, #85bac2, #387076);
+    background-image: linear-gradient(to bottom, #85bac2, #387076);
+    border: 1px solid #317179;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 30px;
+    padding-top: 2px;
+    height: 50px;
+    box-shadow: 0px 3px 10px gray;
+    position: relative;
+    margin-top: -25px;
+}
+
+.home-button:hover {
+    cursor: pointer;
+    box-shadow: 0px 3px 5px black;
+}
+
+.media {
+    background-image: url('../img/media-bg.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+    min-width: 100%;
+    margin-top: 60px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+.media-inner {
+    width: 120px;
+    height: 82px;
+    background-color: white;
+    border: 1px solid #b7b7b7;
+    margin-right: 40px;
+    margin-top: 3%;
+}
+
+.media :last-child {
+    margin-right: auto;
+}
+
+.media :first-child {
+    margin-left: auto;
+}
+
+.black-circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    right: 0;
+    top: 26px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.inner-icon {
+    color: white;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 7px;
+    height: 15px;
+    width: 8px;
+}
+
+.quote {
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 24px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    color: #979797;
+    text-align: center;
+    height: 70px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+
+/* --- CONTENT PAGE ---*/
+
+.top-pagination,
+.top-pagination>a {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 12px;
+    color: #b0afaf;
+    text-shadow: 1px 1px 1px white;
+}
+
+.top-pagination {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#top-pagination-active {
+    color: #758b8d;
+}
+
+.post-title {
+    font-family: 'Goudy Bookletter 1911', serif;
+    color: #758b8d;
+    font-size: 30px;
+}
+
+.post-info {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 12px;
+    color: #a2a2a2;
+}
+
+.post-info a {
+    color: #797979;
+}
+
+.post-image {
+    background-color: #fff;
+    height: 210px;
+    width: 210px;
+    margin-top: 12px;
+    border: 1px solid #ebeaea;
+    border-bottom: 1px solid #cecdcd;
+}
+
+.post-text {
+    margin-top: 12px;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 12px;
+    color: #8c8a8a;
+    text-shadow: 1px 1px 1px white;
+    margin-left: 30px;
+}
+
+.bot-pagination {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 18px;
+    color: #8c8a8a;
+}
+
+#bot-pagination-pages {
+    font-size: 30px;
+}
+
+.bot-pagination a {
+    color: #758b8d;
+}
+
+.sidebar-title {
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 24px;
+    margin-top: 50px;
+    color: #758b8d;
+    margin-left: 12px;
+}
+
+.sidebar-list {
+    list-style-image: url('../img/pointer.png')
+}
+
+.sidebar-link {
+    color: #8c8a8a;
+    font-size: 12px;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.sidebar-link:hover {
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Droid Sans', sans-serif;
+    cursor: pointer;
+}
+
+#last-list {
+    margin-bottom: 50px;
+}
+
+.comment-number {
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 36px;
+    color: #758b8d;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.comment {
+    background-image: url('../img/comment-bg.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+}
+
+.comment-picture {
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    border: 1px solid #ebeaea;
+    border-bottom: 1px solid #cecdcd;
+    margin: 15px auto;
+}
+
+.comment-picture:hover {
+    box-shadow: 0px 2px 1px black;
+}
+
+.comment-title {
+    font-family: 'Goudy Bookletter 1911', serif;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #b6b5b5;
+    text-align: center;
+}
+
+.comment-title strong {
+    font-family: 'Goudy Bookletter 1911', serif;
+    color: #565656;
+    font-size: 24px;
+    margin-top: -5px;
+}
+
+.comment-content {
+    margin-right: 10px;
+    color: #8c8a8a;
+    font-size: 12px;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+#comment-more {
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#footer-title {
+    color: skyblue;
+}
+
+.auth {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+
+/* --- FINAL HOTFIXES --- */

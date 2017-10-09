@@ -1,0 +1,84 @@
+{
+    "shows": [{
+        "categories": ["adventure", "drama", "fantasy"],
+        "description": "Nine noble families fight for control over the mythical lands of Westeros, while a forgotten race returns after being dormant for thousands of years.",
+        "id": "1",
+        "name": "Game of Thrones",
+        "picturePath": "../img/gameofthrones.jpg",
+        "rating": "9.5"
+    }, {
+        "categories": ["sci-fi"],
+        "description": "Ten years before Kirk, Spock and the Enterprise, the USS Discovery discovers new worlds and lifeforms as one Starfleet officer learns to understand all things alien.",
+        "id": "2",
+        "name": "Star Trek: Discovery",
+        "picturePath": "../img/startrek.jpg",
+        "rating": "7.3"
+    }, {
+        "categories": ["animation", "adventure", "comedy"],
+        "description": "An animated series that follows the exploits of a super scientist and his not-so-bright grandson.",
+        "id": "3",
+        "name": "Rick and Morty",
+        "picturePath": "../img/rickandmorty.jpg",
+        "rating": "9.4"
+    }, {
+        "categories": ["drama", "horror", "thriller"],
+        "description": "An anthology series centering on different characters and locations, including a house with a murderous past, an insane asylum, a witch coven, a freak show, a hotel, a possessed farmhouse, and a cult.",
+        "id": "4",
+        "name": "Americans Horror Story",
+        "picturePath": "../img/ahs.jpg",
+        "rating": "8.2"
+    }, {
+        "categories": ["biography", "crime", "drama"],
+        "description": "A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many other drug kingpins who plagued the country through the years.",
+        "id": "5",
+        "name": "Narcos",
+        "picturePath": "../img/narcos.jpg",
+        "rating": "8.9"
+    }, {
+        "categories": ["action", "crime", "drama"],
+        "description": "The story behind Detective James Gordon's rise to prominence in Gotham City in the years before Batman's arrival.",
+        "id": "6",
+        "name": "Gotham",
+        "picturePath": "../img/gotham.jpg",
+        "rating": "7.9"
+    }],
+    "reviews": [{
+        "id": "1",
+        "title": "Game of Thrones - Dracarys",
+        "description": "In what is fast becoming a thrilling pattern, the fourth episode of Game of Thrones season 7 delivers a wonderful untangling of fan-pleasing narratives, teasing out revelations and reunions from its characters, before climaxing in a breathless slice of action that - once again - completely raises the bar for the entertainment potential of TV. In other words: some quiet smarts, followed by a big bang. And oh what a bang it is. The Spoils of War is actually a wonderfully stripped - back episode of Thrones, its run time actually the shortest of season 7 to date.It’ s as close to a Bottle Episode as this show gets, focusing on three main plotlines, yet delivering staggering amounts with each one.You’ re here because you want to read about that incredible, epic battle at the end, so we’ ll start there.It’ s sensational.Not just because HBO has lavished millions of dollars to bring it to life(which it absolutely did), but because the pacing, the cinematography, and the timing of it all perfectly compliments the utter spectacle. Let’ s overlook the slightly wonky plausibility of it.Daenerys would, in all likelihood, never be able to reach that battlefield in time after hearing word of Highgarden’ s fall.This is all about entertainment and the satisfaction of her finally scoring a victory on Westerosi soil.From the ominous thunder of Dothraki hooves at the opening, to the last gasp charge by Jaime against a fully - grown and utterly furious dragon, this is a masterclass in presenting the horrors and glories of war on the small screen. What sticks in my mind is the way the Lannister soldiers shake and appear terrified before the charge of the Dothraki.It does more to humanise them than ten clumsy scenes with Arya chatting to Ed Sheeran.And that makes the subsequent slaughter that much more poignant.While we all delight in the savagery of Game of Thrones’ battle scenes season 7 has done something very clever with its action so far.Last week’ s episode Queen’ s Justice was very much a wi for the bad guys.Yet the method of their victory seems so much more humane and civilised compared to Daenerys’ massacre in Spoils of War.We don’ t even see the battle of Highgarden nor much of the sinking of the Unsullied fleet and Lady Olenna Tyrell poisons herself at Jaime’ s suggestion spitting one last piece of venom about the murder of his son.Perhaps I’ m being too generous in my assessment of the subtleties of the narrative - it could just be a budgetary thing because my god some money was spent on this battle - but Game of Thrones 7 is at pains to blur the lines between good and bad that many viewers had drawn up.This battle while technically a victor for the‘ good guys’ feels like butchery and it could be the end of one major character on a very human path to redemption.Conversely last week’ s victorie for the bad guys would have been classic, noble wins for the plucky underdog, had they not been in favour of the group we’ ve deemed‘ evil’.",
+        "shortDescription": "In what is fast becoming a thrilling pattern, the fourth episode of Game of Thrones season 7 delivers a wonderful untangling of fan-pleasing narratives, teasing out revelations and reunions from its characters, before climaxing in a breathless slice of action that - once again - completely raises the bar for the entertainment potential of TV. In other words: some quiet smarts, followed by a big bang. And oh what a bang it is.",
+        "author": "Ivan Ivanov",
+        "date": "September 1, 2017",
+        "commentsAmount": "4",
+        "picturePath": "../img/review1.jpg",
+        "comments": [{
+            "author": "Chocho",
+            "date": "September 1, 2017",
+            "comment": "Very good review. I love GOT <3",
+            "replies": [{
+                "author": "Ivan Ivanov",
+                "date": "September 1, 2017",
+                "reply": "Thank you <3"
+            }, {
+                "author": "Gosho Peshov",
+                "date": "September 3, 2017",
+                "reply": "Your review sucked kys!"
+            }]
+        }, {
+            "author": "Chocho",
+            "date": "September 6, 2017",
+            "comment": "Are you going to review episode 5?",
+            "replies": []
+        }]
+    }, {
+        "id": "2",
+        "title": "Mr. Robot Season 3 Predictions.",
+        "description": "The world of Mr. Robot is a bloody mess. At the end of the Season 2 finale, Elliot (Rami Malek) finally understands what Stage 2 is: a bomb plot collaborated between fsociety, the Dark Army, Whiterose (BD Wong), and Tyrell Wellick (Martin Wallstrm), who is very much alive and not a figment of Elliot’s imagination. The goal was to prevent E Corp from rebuilding their database that was destroyed in the 5/9 Hack using paper records; because they were assembling the files in a single location, the plan would mean the deaths of innocent people. Elliot tries to stop it, but is shot in the gut by Tyrell, with Mr. Robot (Christian Slater) standing idly by.  Elliot isn’t dead, but he’s not in a great place either; the FBI is on to him, and he’s bleeding everywhere. But there’s no Jon Snow-ing here, as we don’t have to spend the next year guessing about Elliot’s wellbeing. Instead, what is it that Mr. Robot could possibly be about when it returns in 2017? All the Plots to Remember In handy bulletpoint form, here is the Mr. Robot’s current status quo: Elliot is bleeding out, and his relationship with Mr. Robot is more strained than ever. Tyrell is continuing Stage 2, which he may have successfully pulled off, considering New York’s unstable power blackouts for good. Angela is now embedded within the Dark Army and Whiterose and is no longer pursuing her vengeance against E Corp. She comes to the aid of Elliot after speaking with Tyrell, but this seems sketchy. Trenton (Sunita Mani) and Mobley (Azar Khan) are hiding out under new identities (Trenton has ditched her hijab) as employees of a Fry’s Electronics. Mobley has discovered something that can “put everything back the way it was”, but they’re interrupted by Leon (Joey Bada$$), Elliot’s prison mate who saved him from assault by white supremacists. He asks them if they have the time. As Leon is in cahoots with the Dark Army and Whiterose, who is obsessed with time, it seems Trenton and Mobley have run out. Joanna Wellick (Stephanie Corneliussen) learns Tyrell’s correspondence was the work of Tyrell’s rival, a begrudging and drunk Scott Knowles. Scott attacks her, brutally, but it may have been Joanna’s plan all along. She is now setting up her new boyfriend to frame Scott to clear Tyrell’s name. She wouldn’t be a Wellick if she didn’t know what she was doing. Dom (Grace Gummer) and Darlene (Carly Chaikan) have a shaky partnership, mostly because Darlene can’t escape Dom’s custody. Still, she seems pretty taken aback learning Tyrell supersedes Elliot in fsociety’s chain. A lot of her arc this season was on her faith and relationship with Elliot being the string-puller of fsociety, but now her view has been shattered: “You’ve gotta be f*ing kidding me.” Philip Price (Michael Cristofer) is trying to make eCoin happen. Stop trying to make eCoin happen, Philip.",
+        "shortDescription": "The world of Mr. Robot is a bloody mess. At the end of the Season 2 finale, Elliot (Rami Malek) finally understands what Stage 2 is: a bomb plot collaborated between fsociety, the Dark Army, Whiterose (BD Wong), and Tyrell Wellick (Martin Wallstrm), who is very much alive and not a figment of Elliot’s imagination. The goal was to prevent E Corp from rebuilding their database that was destroyed in the 5/9 Hack using paper records; because they were assembling the files in a single location, the plan would mean the deaths of innocent people. Elliot tries to stop it, but is shot in the gut by Tyrell, with Mr. Robot (Christian Slater) standing idly by.",
+        "author": "Ivan Ivanov",
+        "date": "September 1, 2017",
+        "commentsAmount": "4",
+        "picturePath": "../img/review1.jpg",
+        "comments": []
+    }]
+}

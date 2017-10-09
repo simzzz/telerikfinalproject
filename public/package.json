@@ -1,0 +1,32 @@
+{
+    "name": "blue-review",
+    "version": "1.0.0",
+    "description": "Site about TV shows and reviews",
+    "main": "index.js",
+    "scripts": {
+        "dev": "firebase serve",
+        "build": ""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/simzzz/telerikfinalproject"
+    },
+    "keywords": [
+        "front-end",
+        "telerik"
+    ],
+    "author": "Simzzz",
+    "license": "MIT",
+    "homepage": "TODO: Rawgit",
+    "dependencies": {
+        "bootstrap": "^3.3.7",
+        "handlebars": "^4.0.6",
+        "jquery": "^3.2.1",
+        "jquery-ui-dist": "^1.12.1",
+        "navigo": "^4.6.2",
+        "popper.js": "^1.12.5",
+        "systemjs": "^0.20.12",
+        "systemjs-plugin-babel": "0.0.21",
+        "toastr": "^2.1.2"
+    }
+}

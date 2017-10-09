@@ -1,0 +1,173 @@
+<div class="col-xl-8 col-l-8 col-m-10 col-s-12 ml-auto mr-auto">
+    <div class="row">
+        <div class="col-xl-3 col-l-4 col-m-4 col-s-6 top-pagination">
+            <a href="#">Reviews </a> »
+            <a href="#" id="top-pagination-active">All</a>
+        </div>
+    </div>
+    {{#this}}
+        <div class="row" id="{{id}}">
+            <div class="col-xl-10 col-l-12 col-m-12 col-s-12">
+                <div class="row" id="post-small">
+                    <div class="col-12">
+                        <div class="row post-title">{{title}}</div>
+                        <div class="row post-info">Posted by <a href="#">&nbsp;{{author}}&nbsp;</a> on {{date}} | {{commentsAmount}} Comments</div>
+                        <div class="row post-content">
+                            <div class="col-xl-4 col-l-4 col-m-12 col-s-12">
+                                <div class="post-image"><img src="{{picturePath}}" alt=""></div>
+                            </div>
+                            <div class="col-xl-8 col-l-8 col-m-12 col-s-12">
+                                <div class="post-text">
+                                    {{shortDescription}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 ml-auto">
+                                <div class="showcase-btn mr-auto" id="show-more">Show More</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row hidden" id="post-extended">
+                    <div class="col-12">
+                        <div class="row post-content">
+                            <div class="post-text">
+                                <div class="post-image"><img src="{{picturePath}}" alt=""></div>
+                                {{description}}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 ml-auto">
+                                <div class="showcase-btn mr-auto" id="show-less">Show Less</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="divider">
+                <div class="row hidden" id="comments">
+                    <div class="comment-number">
+                        {{commentsAmount}} Comments
+                    </div>
+                    {{#if comments}}
+                    {{#each comments}}
+                    <div class="col-12">
+                        <div class="comment">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="comment-picture"></div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="row comment-title"><strong>{{this.author}} &nbsp;</strong> | {{this.date}}</div>
+                                    <div class="row comment-content">{{this.comment}}</div>
+                                    <div class="row">
+                                        <div class="col-2 ml-auto">
+                                            <div class="showcase-btn" id="comment-more">Reply</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        {{#each this.replies}}
+                        <div class="col-10 ml-auto">
+                            <div class="comment">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="comment-picture"></div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="row comment-title"><strong>{{this.author}} &nbsp;</strong> | {{this.date}}</div>
+                                        <div class="row comment-content">{{this.reply}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    {{/each}}
+                    {{/if}}
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-l-6 col-m-8 col-s-12 ml-auto">
+                        <div class="bot-pagination">
+                            <div class="row">
+                                <div class="col-6">Review {{id}} of 2</div>
+                                <div class="col-6" id="bot-pagination-pages"><a href="#" class="review-one">1&nbsp;</a> <a href="#" class="review-two">&nbsp;2&nbsp;</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-l-6 col-m-6 col-s-6 sidebar">
+                <hr class="divider">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="sidebar-title">Recent Comments</h1>
+                        <ul class="sidebar-list">
+                            <li>
+                                <a href="" class="sidebar-link">Ivan Ivanov</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">Stamat Stamatov</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">Kiril Hristov</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">Vanko Edno</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">Pesho Goshov Toshov</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">Chocho Chochov</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="sidebar-title">Archives</h1>
+                        <ul class="sidebar-list">
+                            <li>
+                                <a href="" class="sidebar-link">2017</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">2016</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">2015</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">2014</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">2013</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">2012</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="sidebar-title">Recent Posts</h1>
+                        <ul class="sidebar-list" id="last-list">
+                            <li>
+                                <a href="" class="sidebar-link">How bad is suicide squad?</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">It? More like FIT. HA!</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">Filler Review</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/this}}
+</div>
