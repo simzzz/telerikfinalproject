@@ -17,7 +17,7 @@
     ],
     "author": "Simzzz",
     "license": "MIT",
-    "homepage": "TODO: Rawgit",
+    "homepage": "https://blue-review.firebaseapp.com/",
     "dependencies": {
         "bootstrap": "^3.3.7",
         "handlebars": "^4.0.6",
