@@ -1,0 +1,1 @@
+import"jquery";import"popperjs";const templates=function(){return{getPage:function(t,e){const n=`templates/${t}.handlebars`;return $.get(n,function(t){const n=Handlebars.compile(t.toString());$("#content").html(n(e))})}}}();export{templates};

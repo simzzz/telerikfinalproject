@@ -13,7 +13,20 @@ gulp.task('css-minify', () => {
 });
 
 gulp.task('js-minify', () => {
-    gulp.src(['./controllers/*.js', './config/*.js', './app-modules/*.js', './requesters/*.js'])
+    gulp.src('./controllers/*.js')
         .pipe(minify())
         .on('error', function(err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+        .pipe(gulp.dest('./controllers'))
+    gulp.src('./config/*.js')
+        .pipe(minify())
+        .on('error', function(err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+        .pipe(gulp.dest('./config'))
+    gulp.src('./app-modules/*.js')
+        .pipe(minify())
+        .on('error', function(err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+        .pipe(gulp.dest('./app-modules'))
+    gulp.src('./requesters/*.js')
+        .pipe(minify())
+        .on('error', function(err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+        .pipe(gulp.dest('./requesters'))
 });
