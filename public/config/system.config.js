@@ -22,6 +22,7 @@ SystemJS.config({
 
         //Libraries\\
         "jquery": "../node-modules/jquery/dist/jquery.js",
+        "ultimate-pagination": "../node_modules/ultimate-pagination/dist/ultimate-pagination.min.js",
         //Routing:
         "navigo": "../node-modules/navigo/lib/navigo.min.js",
         //HTML:

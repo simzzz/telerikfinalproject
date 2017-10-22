@@ -11,7 +11,7 @@ const changePasswordController = function(user) {
                     $('#dropdownMenu').addClass('hidden');
                 }
             });
-            $('#title').html('Change Password!');
+            $('#title').html('Change Password');
             const $changeBtn = $('#changeBtn');
             const $currentPass = $('#tb-currentPass');
             const $newPass = $('#tb-newPassword');

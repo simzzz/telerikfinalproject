@@ -1,43 +1,52 @@
 {
-    "name": "blue-review",
-    "version": "1.0.0",
-    "description": "Site about TV shows and reviews",
-    "main": "index.js",
-    "scripts": {
-        "dev": "firebase serve",
-        "build": "gulp css-minify gulp js-minify firebase serve",
-        "deploy": "gulp css-minify gulp js-minify firebase deploy"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/simzzz/telerikfinalproject"
-    },
-    "keywords": [
-        "front-end",
-        "telerik"
-    ],
-    "author": "Simzzz",
-    "license": "MIT",
-    "homepage": "https://blue-review.firebaseapp.com/",
-    "dependencies": {
-        "bootstrap": "^3.3.7",
-        "handlebars": "^4.0.6",
-        "jquery": "^3.2.1",
-        "jquery-ui-dist": "^1.12.1",
-        "navigo": "^4.6.2",
-        "popper.js": "^1.12.5",
-        "systemjs": "^0.20.12",
-        "systemjs-plugin-babel": "0.0.21",
-        "toastr": "^2.1.2"
-    },
-    "devDependencies": {
-        "gulp": "^3.9.1",
-        "gulp-autoprefixer": "^4.0.0",
-        "gulp-clean-css": "^3.9.0",
-        "gulp-concat": "^2.6.1",
-        "gulp-minify": "^1.0.0",
-        "gulp-minify-css": "^1.2.4",
-        "gulp-rename": "^1.2.2",
-        "gulp-uglify": "^3.0.0"
-    }
+  "name": "blue-review",
+  "version": "1.0.0",
+  "description": "Site about TV shows and reviews",
+  "main": "index.js",
+  "scripts": {
+    "dev": "firebase serve",
+    "build": "gulp css-minify gulp js-minify firebase serve",
+    "deploy": "gulp css-minify gulp js-minify firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simzzz/telerikfinalproject"
+  },
+  "keywords": [
+    "front-end",
+    "telerik"
+  ],
+  "author": "Simzzz",
+  "license": "MIT",
+  "homepage": "https://blue-review.firebaseapp.com/",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "handlebars": "^4.0.6",
+    "jquery": "^3.2.1",
+    "jquery-ui-dist": "^1.12.1",
+    "navigo": "^4.6.2",
+    "popper.js": "^1.12.5",
+    "systemjs": "^0.20.12",
+    "systemjs-plugin-babel": "0.0.21",
+    "toastr": "^2.1.2",
+    "ultimate-pagination": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csslint": "^1.0.0",
+    "gulp-html5-lint": "^1.1.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-minify": "^1.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^8.0.0",
+    "gulp-shell": "^0.6.3",
+    "gulp-spa": "^0.2.2",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5"
+  }
 }

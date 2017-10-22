@@ -1,86 +1,101 @@
 <div class="col-xl-8 col-l-8 col-m-10 col-s-12 ml-auto mr-auto">
     <div class="row">
-        <div class="col-xl-8 col-l-8 col-m-10 col-s-12 ml-auto mr-auto">
-                <div class="row">
-                    <div class="col-xl-3 col-l-4 col-m-4 col-s-6 top-pagination">
-                        <a href="#">Shows</a> » <a href="#" id="top-pagination-active">All</a>
+        <div class="col-xl-3 col-l-4 col-m-4 col-s-6 top-pagination droid-12">
+            <a href="#">Shows</a> » <a href="#" id="top-pagination-active">All</a>
+        </div>
+        <div class="row">
+            <div class="col-xl-8 col-l-10 col-m-12 col-s-12">
+                {{#this}}
+                <div class="row" id="{{id}}">  
+                    <div class="col-12">
+                        <div class="row post-title shows-title goudy-30">{{name}}</div>
+                        <div class="row post-info shows-info">Rated <a href="#">&nbsp;{{rating}}&nbsp;</a> in categories {{#each categories}}<a href="#">&nbsp;{{this}}, &nbsp;</a>{{/each}}
+                            on March 13, 2010 | 30 Comments</div>
+                        <div class="row post-content">
+                            <div class="post-text droid-12">
+                                <div class="post-image shows-image">
+                                    <img src="{{path}}" alt="{{name}}">
+                                </div>
+                                <p class="shows-desc">{{description}}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                {{/this}}
                 <div class="row">
-                    <div class="col-xl-10 col-l-12 col-m-12 col-s-12">
-                                {{#this}}
-                        
-                        <div class="row" id="{{id}}">
-                            <div class="col-12">
-                                <div class="row post-title">{{name}}</div>
-                                <div class="row post-info">Rated <a href="#">&nbsp;{{rating}}&nbsp;</a> in categories {{#each categories}}<a href="#">&nbsp;{{this}}, &nbsp;</a>{{/each}} on March 13, 2010 | 30 Comments</div>
-                                <div class="row post-content">
-                                    <div class="col-xl-4 col-l-4 col-m-12 col-s-12">
-                                        <div class="post-image">
-                                            <img src="{{path}}" alt="{{name}}">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-8 col-l-8 col-m-12 col-s-12">
-                                        <div class="post-text">
-                                            {{description}}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                                {{/this}}
-                        <div class="row">
-                            <div class="col-xl-6 col-l-6 col-m-8 col-s-12 ml-auto">
-                                <div class="bot-pagination">
-                                    <div class="row">
-                                        <div class="col-6" id="page-info">Page 1 of 3</div>
-                                        <div class="col-6" id="bot-pagination-pages"><a href="#" id="page-1">1&nbsp;</a> <a href="#" id="page-2">&nbsp;2&nbsp;</a> <a href="#" id="page-3">&nbsp;3&nbsp;</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-l-6 col-m-6 col-s-6 sidebar">
-                        <hr class="divider">
-                        <div class="row">
-                            <div class="col-12">
-                                <h1 class="sidebar-title">All Categories</h1>
-                                <ul class="sidebar-list">
-                                    <li>
-                                        <a href="" class="sidebar-link"> Action</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="sidebar-link"> Adventure</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="sidebar-link"> Animation</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="sidebar-link"> Comedy</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="sidebar-link"> Crime</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="sidebar-link"> Drama</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="sidebar-link"> Fantasy</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="sidebar-link"> Horror</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="sidebar-link"> Sci-Fi</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="sidebar-link"> Thriller</a>
-                                    </li>
-                                </ul>
+                    <div class="col-xl-6 col-l-6 col-m-8 col-s-12 ml-auto">
+                        <div class="bot-pagination goudy-18">
+                            <div class="row">
+                                <div class="col-6" id="page-info">Page 1 of 3</div>
+                                <div class="col-6" id="bot-pagination-pages"><a href="#" id="page-1">1&nbsp;</a> <a href="#" id="page-2">&nbsp;2&nbsp;</a> <a href="#"
+                                        id="page-3">&nbsp;3&nbsp;</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-xl-4 col-l-2 col-m-6 col-s-6 sidebar">
+                <hr class="divider">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="sidebar-title goudy-24">All Categories</h1>
+                        <ul class="sidebar-list droid-12">
+                            <li>
+                                <a href="" class="sidebar-link"> Action</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link"> Adventure</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link"> Animation</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link"> Comedy</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link"> Crime</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link"> Drama</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link"> Fantasy</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link"> Horror</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link"> Sci-Fi</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link"> Thriller</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="sidebar-title goudy-24">Recent Posts</h1>
+                        <ul class="sidebar-list droid-12" id="last-list">
+                            <li>
+                                <a href="" class="sidebar-link">Game of Thrones - Dracarys</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">Mr Robot Season 3 predictions</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">Filler Review Filler Review Filler Review</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">Filler Review Filler Review Filler Review</a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">Filler Review Filler Review Filler Review</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

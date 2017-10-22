@@ -2,6 +2,9 @@ import { templates } from 'templates';
 import { UserRequester } from 'userRequester';
 
 const loginController = function(user) {
+    if (localStorage.getItem('firebase:host:blue-review.firebaseio.com')) {
+        document.location = '/reviews';
+    }
     templates.getPage('login', {})
         .done(() => {
             $('#dropdownMenuLink').click(() => {

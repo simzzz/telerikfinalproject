@@ -10,6 +10,7 @@ import { changePasswordController } from 'changePasswordController';
 import { editProfileController } from 'editProfileController';
 import { reviewsController } from 'reviewsController';
 import { UserRequester } from 'userRequester';
+import { ultimatePagination } from 'ultimate-pagination';
 
 const userRequester = new UserRequester();
 
