@@ -2762,11 +2762,12 @@ tbody.collapse.show {
     font-size: 1rem;
     color: #212529;
     text-align: left;
-    list-style: none;
-    background-color: #fff;
+    background-color: #cdcdcd;
     background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: .25rem
+    border: 1px solid white;
+    border-radius: .25rem;
+    box-shadow: 1px 1px 1px black;
+    list-style-image: url('../img/pointer.png');
 }
 
 .dropdown-divider {

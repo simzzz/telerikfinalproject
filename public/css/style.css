@@ -669,6 +669,10 @@
     cursor: pointer;
 }
 
+.dropdown-toggle {
+    padding: 10px;
+}
+
 
 /* --- QUERIES --- */
 
@@ -754,7 +758,7 @@
 
 @media (max-width: 575px) {
     #mini-nav {
-        margin-left: 200px;
+        margin-left: 180px;
         margin-right: 0;
     }
     .quote {
@@ -798,8 +802,7 @@
 
 @media (max-width: 425px) {
     #mini-nav {
-        margin-left: 160px;
-        margin-right: 0;
+        margin-left: 150px;
     }
     .quote {
         height: 130px;
