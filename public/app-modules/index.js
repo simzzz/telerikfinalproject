@@ -34,8 +34,8 @@ router
     .on(() => homeController())
     .on({
         '/home': () => homeController(),
-        '/register': () => registerController(),
-        '/login': () => loginController(),
+        '/register': () => registerController(currentlyLoggedUser),
+        '/login': () => loginController(currentlyLoggedUser),
         '/logout': () => logoutController(),
         '/user': () => userController(currentlyLoggedUser),
         '/changePassword': () => changePasswordController(currentlyLoggedUser),
