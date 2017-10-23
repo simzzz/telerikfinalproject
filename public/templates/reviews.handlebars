@@ -1,4 +1,4 @@
-<div class="col-xl-8 col-l-8 col-m-10 col-s-12 ml-auto mr-auto">
+<section class="col-xl-8 col-l-8 col-m-10 col-s-12 ml-auto mr-auto">
     <div class="row">
         <div class="col-xl-3 col-l-4 col-m-4 col-s-6 top-pagination droid-12">
             <a href="#">Reviews </a> »
@@ -8,7 +8,7 @@
     {{#this}}
     <div class="row" id="{{id}}">
         <div class="col-xl-8 col-l-10 col-m-12 col-s-12">
-            <div class="row post-small">
+            <article class="row post-small">
                 <div class="col-12">
                     <div class="row post-title goudy-30">{{title}}</div>
                     <div class="row post-info">Posted by <a href="#">&nbsp;{{author}}&nbsp;</a> on {{date}} | {{commentsAmount}} Comments</div>
@@ -24,10 +24,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row hidden post-extended">
-                <div class="col-12">
-                    <div class="row post-title goudy-30">{{title}}</div>                    
+            </article>
+            <article class="row hidden post-extended">
+                <div class="col-12">              
                     <div class="row post-content">
                         <div class="post-text droid-12">
                             <div class="post-image"><img src="{{picturePath}}" alt=""></div>
@@ -40,8 +39,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row hidden comments">
+            </article>
+            <section class="row hidden comments">
                 <div class="col-12 comments-divider"></div>
 
                 <div class="comment-number">
@@ -81,8 +80,8 @@
                     </div>
                 </div>
                 {{/each}} {{/each}} {{/if}}
-            </div>
-            <div class="row">
+            </section>
+            <section class="row">
                 <div class="col-xl-6 col-l-6 col-m-8 col-s-12 ml-auto">
                     <div class="bot-pagination goudy-18">
                         <div class="row">
@@ -91,11 +90,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
         <div class="col-xl-4 col-l-2 col-m-6 col-s-6 sidebar">
             <hr class="divider">
-            <div class="row">
+            <aside class="row">
                 <div class="col-12">
                     <h1 class="sidebar-title goudy-24">Recent Comments</h1>
                     <ul class="sidebar-list droid-12">
@@ -119,9 +118,9 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </aside>
 
-            <div class="row">
+            <aside class="row">
                 <div class="col-12">
                     <h1 class="sidebar-title goudy-24">Archives</h1>
                     <ul class="sidebar-list droid-12">
@@ -145,8 +144,8 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="row">
+            </aside>
+            <aside class="row">
                 <div class="col-12">
                     <h1 class="sidebar-title goudy-24">Recent Posts</h1>
                     <ul class="sidebar-list droid-12" id="last-list">
@@ -161,8 +160,8 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </aside>
         </div>
     </div>
     {{/this}}
-</div>
+</section>

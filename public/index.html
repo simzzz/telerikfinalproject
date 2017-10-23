@@ -23,9 +23,9 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./node-modules/toastr/build/toastr.min.css">
-    <link rel="stylesheet" href="./dist/css/style.css">
 
-    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css\style.css" />
+
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
 
@@ -36,16 +36,14 @@
 </head>
 
 <body>
-
-
     <div class="container-fluid">
-        <div class="row header-main" id="big-header">
+        <header class="row header-main" id="big-header">
             <div class="col-xl-8 col-l-8 col-m-10 col-s-12 ml-auto mr-auto" id="header">
                 <div class="row h-row">
                     <div class="col-4">
-                        <a href="#"><img src="./img/logo.png" alt="LOGO" id="logo"></a>
+                        <a href="/home"><img src="./img/logo.png" alt="LOGO" id="logo"></a>
                     </div>
-                    <div class="col-8 droid-12" id="navigation">
+                    <nav class="col-8 droid-12" id="navigation">
                         <ul class="nav justify-content-center ml-auto mr-auto" id="nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="/home">Home</a>
@@ -72,8 +70,8 @@
                                 <a class="nav-link" href="/home"><strong>Log out</strong></a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="dropdown show goudy-30" id="mini-nav">
+                    </nav>
+                    <nav class="dropdown show goudy-30" id="mini-nav">
                         <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Menu
                         </a>
@@ -88,7 +86,7 @@
                             <a id="currentUserInner" class="dropdown-item" href="/user"></a>
                             <a class="dropdown-item" href="/home"><strong>Log out</strong></a>
                         </div>
-                    </div>
+                    </nav>
                 </div>
                 <div class="row">
                     <div class="col-xl-4 col-l-4 col-m-6 col-s-12 index-header">
@@ -101,15 +99,15 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row content" id="content">
+        </header>
+        <section class="row content" id="content">
             <div class="loader-container col-xl-8 col-l-8 col-m-10 col-s-12 ml-auto mr-auto">
                 <div id="loader-wrapper">
                     <div id="loader"></div>
                 </div>
             </div>
-        </div>
-        <div class="row footer">
+        </section>
+        <footer class="row footer">
             <div class="col-xl-8 col-l-8 col-m-10 col-s-12 ml-auto mr-auto">
                 <div class="row logo-row" id="logo-row">
                     <div class="col-xl-4 col-l-4 col-m-6 col-s-12">
@@ -168,8 +166,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row footer-nav droid-12">
+        </footer>
+        <nav class="row footer-nav droid-12">
             <div class="col-xl-8 col-l-8 col-m-10 col-s-12 ml-auto mr-auto">
                 <div class="row">
                     <div class="col-8 float-left">
@@ -201,7 +199,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
     </div>
     <script>
         System.import("index");
