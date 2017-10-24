@@ -4,7 +4,7 @@ import {
 import 'bootstrap';
 import 'popperjs';
 
-const homeController = function() {
+const homeController = function(user) {
     $(document).ready(() => {
         templates.getPage('home', {})
             .done(() => {
@@ -12,6 +12,14 @@ const homeController = function() {
                 $('#big-header').removeClass('header-main')
                 $('#big-header').addClass('header');
                 $('.footer').addClass('index-footer');
+
+                if (user) {
+                    $('.logged').removeClass('hidden');
+                    $('.not-logged').addClass('hidden');
+                } else {
+                    $('.not-logged').removeClass('hidden');
+                    $('.logged').addClass('hidden');
+                }
             })
         jQuery.get('../templates/homeHeader.handlebars', (data) => {
             $('#header').html(data);

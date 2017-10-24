@@ -1,7 +1,7 @@
 import { templates } from 'templates';
 import { UserRequester } from 'userRequester';
 
-const showsController = function() {
+const showsController = function(user) {
 
     let shows;
     let childArray = [];
@@ -37,6 +37,15 @@ const showsController = function() {
                     $('#dropdownMenu').addClass('hidden');
                 }
             });
+
+            if (user) {
+                $('.logged').removeClass('hidden');
+                $('.not-logged').addClass('hidden');
+            } else {
+                $('.not-logged').removeClass('hidden');
+                $('.logged').addClass('hidden');
+            }
+
             $('#title').html('Shows');
             $('#subtitle').html('Browse shows from several different categories.');
 

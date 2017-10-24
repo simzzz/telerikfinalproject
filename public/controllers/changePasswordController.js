@@ -11,6 +11,16 @@ const changePasswordController = function(user) {
                     $('#dropdownMenu').addClass('hidden');
                 }
             });
+
+            if (user) {
+                $('.logged').removeClass('hidden');
+                $('.not-logged').addClass('hidden');
+            } else {
+                $('.not-logged').removeClass('hidden');
+                $('.logged').addClass('hidden');
+            }
+
+
             $('#title').html('Change Password');
             const $changeBtn = $('#changeBtn');
             const $currentPass = $('#tb-currentPass');

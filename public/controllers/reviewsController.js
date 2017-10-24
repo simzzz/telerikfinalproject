@@ -1,7 +1,7 @@
 import { templates } from 'templates';
 import { UserRequester } from 'userRequester';
 
-const reviewsController = function() {
+const reviewsController = function(user) {
     let reviews;
     let childArray = [];
     firebase.database().ref('/reviews/').once('value').then((snapshot) => {
@@ -33,6 +33,15 @@ const reviewsController = function() {
                         $('#dropdownMenu').addClass('hidden');
                     }
                 });
+
+                if (user) {
+                    $('.logged').removeClass('hidden');
+                    $('.not-logged').addClass('hidden');
+                } else {
+                    $('.not-logged').removeClass('hidden');
+                    $('.logged').addClass('hidden');
+                }
+
                 $('#title').text('Reviews');
                 $('#subtitle').text('Critic reviews at your disposal!');
 

@@ -33,15 +33,15 @@ const router = new Navigo(null, false, '#!');
 router
     .on(() => homeController())
     .on({
-        '/home': () => homeController(),
+        '/home': () => homeController(currentlyLoggedUser),
         '/register': () => registerController(currentlyLoggedUser),
         '/login': () => loginController(currentlyLoggedUser),
         '/logout': () => logoutController(),
         '/user': () => userController(currentlyLoggedUser),
         '/changePassword': () => changePasswordController(currentlyLoggedUser),
         '/editProfile': () => editProfileController(currentlyLoggedUser),
-        '/contact': () => contactsController(),
-        '/shows': () => showsController(),
-        '/reviews': () => reviewsController()
+        '/contact': () => contactsController(currentlyLoggedUser),
+        '/shows': () => showsController(currentlyLoggedUser),
+        '/reviews': () => reviewsController(currentlyLoggedUser)
     })
     .resolve();

@@ -15,6 +15,15 @@ const editProfileController = function(user) {
                     $('#dropdownMenu').addClass('hidden');
                 }
             });
+
+            if (user) {
+                $('.logged').removeClass('hidden');
+                $('.not-logged').addClass('hidden');
+            } else {
+                $('.not-logged').removeClass('hidden');
+                $('.logged').addClass('hidden');
+            }
+
             $('#title').hmtl('Edit your Profile');
             const $editBtn = $('#editBtn');
 

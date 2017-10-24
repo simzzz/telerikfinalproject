@@ -10,5 +10,4 @@ Use the [direct link](https://blue-review.firebaseapp.com/)
 
 - Clone the repository
 - Use  **npm install**
-- Either use **npm run dev** for developing purposes or **npm run build** to build your application locally.
-
+- Either use **gulp dev** for developing purposes or **gulp build** to build your application locally.

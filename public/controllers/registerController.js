@@ -12,6 +12,13 @@ const registerController = function(user) {
                         $('#dropdownMenu').addClass('hidden');
                     }
                 });
+                if (user) {
+                    $('.logged').removeClass('hidden');
+                    $('.not-logged').addClass('hidden');
+                } else {
+                    $('.not-logged').removeClass('hidden');
+                    $('.logged').addClass('hidden');
+                }
                 $('#title').html('Sign Up');
                 $('#subtitle').html('And start using our platform right away!');
                 const $registerBtn = $('#btn-register');

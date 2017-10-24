@@ -12,6 +12,13 @@ const loginController = function(user) {
                         $('#dropdownMenu').addClass('hidden');
                     }
                 });
+                if (user) {
+                    $('.logged').removeClass('hidden');
+                    $('.not-logged').addClass('hidden');
+                } else {
+                    $('.not-logged').removeClass('hidden');
+                    $('.logged').addClass('hidden');
+                }
                 $('#title').html('Log In');
                 const $loginBtn = $('#btn-login');
                 const $email = $('#tb-email');

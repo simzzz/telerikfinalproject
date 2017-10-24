@@ -2,7 +2,7 @@ import { templates } from 'templates';
 import 'bootstrap';
 import 'popperjs';
 
-const contactsController = function() {
+const contactsController = function(user) {
     templates.getPage('contacts', {})
         .done(() => {
             $(document).ready(function() {
@@ -13,6 +13,15 @@ const contactsController = function() {
                         $('#dropdownMenu').addClass('hidden');
                     }
                 });
+
+                if (user) {
+                    $('.logged').removeClass('hidden');
+                    $('.not-logged').addClass('hidden');
+                } else {
+                    $('.not-logged').removeClass('hidden');
+                    $('.logged').addClass('hidden');
+                }
+
                 $('#title').html('Contact Us');
                 $('#subtitle').html('');
                 $('#contact_form').bootstrapValidator({

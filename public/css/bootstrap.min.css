@@ -2787,7 +2787,8 @@ tbody.collapse.show {
     text-align: inherit;
     white-space: nowrap;
     background: 0 0;
-    border: 0
+    border: 0;
+    text-shadow: 1px 1px 0 white;
 }
 
 .dropdown-item:focus,
